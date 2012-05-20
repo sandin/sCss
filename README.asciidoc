@@ -1,0 +1,4 @@
+== sCss ==
+lds<lds2012[at]gmail.com>
+
+`sCss` is A simple CSS framework.
