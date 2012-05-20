@@ -1,0 +1,220 @@
+/*{{{ reset */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,div{margin:0;padding:0;}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;}h1,h2,h3,h4,h5,h6{font-size:100%;}address,cite,dfn,em,var{font-style:normal;}code,kbd,pre,samp{font-family:courier new,courier,monospace;}small{font-size:12px;}ul,ol{list-style:none;}a{text-decoration:none;}a:hover{text-decoration:underline;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}legend{color:#000;}fieldset,img{border:0;}button,input,select,textarea{font-size:100%;}table{border-collapse:collapse;border-spacing:0;}
+/*}}}*/
+
+/* base {{{ 
+------------------*/
+body {
+    background: #FFF;
+    color: #333;
+}
+
+/* links color */
+a:link { color: #000; text-decoration: none; }
+a:visited { color: #313131;/*change it*/ text-decoration: none; }
+a:hover { color: #d93939; text-decoration: none; }
+a:active { color: #d93939; text-decoration: none;}
+
+h1,h2,h3,h4,h5,h6 {}
+h3 {font-size: 12px;}
+
+em {color:red;}
+
+/* clearfix */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+.clearfix { zoom: 1; display: inline-block; _height: 1px }
+*html .clearfix { height: 1% }
+*+html .clearfix { height: 1% }
+.clearfix { display: block }
+
+.clear { clear: both; height: 0; overflow: hidden; }
+
+/* Helper  
+-----------------*/
+.m0 { margin: 0; }
+.mr0 { margin-right: 0; }
+.mr2 { margin-right: 2px; }
+.mr5 { margin-right: 5px; }
+.ml5 { margin-left: 5px; }
+.mb5 { margin-bottom: 5px; }
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.ml10 { margin-left: 10px; }
+.mb10 { margin-bottom: 10px; }
+.mt10 { margin-top: 10px; }
+.p10 { padding: 10px; }
+.p20 { padding: 20px; }
+
+.fright { float: right; }
+.fleft { float: left; }
+
+.pRelative { position: relative; }
+.pRight { position: absolute; right: 5px; top:0; }
+
+.aRight { text-align: right; }
+.aCenter { text-align: center; }
+
+.getMore { float: right; padding-right: 5px; }
+
+.hide { display: none; }
+
+.small { font-size: 12px; }
+
+/* Share style 
+-------------------------*/
+.strong_1 { color: #649ac8; }
+.strong_2 { color: #ff3402; }
+.strong_3 { color: #33cc00; }
+
+.more {
+    position: absolute;
+    right: 2px;
+    _right: 12px;
+    top: 0;
+}
+
+/* button */
+.btn {}
+
+/* sprite */
+
+/*}}}*/
+
+/* Layout {{{ 
+-------------------------*/
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+#content {
+    min-height: 500px;
+    _height: 500px;
+}
+ 
+/* header */
+#header {
+    background: url("../images/logo.gif") no-repeat;
+    height: 91px;
+}
+#header .logo {
+    width: 200px;
+    float: left;
+}
+#header .info {
+    width: 400px;
+    float: right;
+}
+
+#nav {
+}
+
+/* footer */
+#footer {
+    /*text-align: center;*/
+    margin-bottom: 10px;
+}
+#footer p {
+    line-height: 25px;
+}
+#footer .links {
+    background: #7e7e7e;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* grid */
+.grid_2_7 .gridcol_2 {
+    width: 210px;
+    float: left;
+}
+.grid_2_7 .gridcol_7 {
+    width: 756px;
+    float: right;
+}
+
+/*}}}*/
+
+/* content */
+#content {}
+#content .aside {
+}
+#content .main {
+}
+
+
+/* box */
+.box {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+.box h3 {}
+.box .innerBox {
+    padding: 5px;
+}
+
+.mainBox {}
+.mainBox h3 {
+    line-height: 30px;
+    background: #eee url("") repeat 0 0;
+    border-bottom: 1px solid #ccc;
+    padding: 0 5px;
+}
+
+.mainBox .innerBox {
+}
+
+
+/* list */
+.list {}
+.list li {
+    margin-bottom: 5px;
+}
+
+
+/* form */
+form .text {
+    border: 1px solid #c8c8c8;
+}
+.sForm .form-row {
+    margin-bottom: 10px;
+}
+
+.labelForm label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 5px;
+}    
+
+/* table */
+.sTable {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.sTable th,
+.sTable td {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 2px;
+}
+
+.sTable th {
+    background: #eee url("") repeat 0 0;
+}
+
+/* button */
+
+/* debug */
+
+#header,
+#header *,
+#nav, 
+#content,
+#content .aside,
+#content .main,
+#footer {
+    border: 1px red solid;
+}
